@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+## About
+**No Peace for Your Inbox** is a React-based frontend with a Node.js/Express backend, designed to manage email subscriptions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### ✨ Features
 
-Currently, two official plugins are available:
+- **Frontend:**
+  - 🚀 Built with React and TypeScript.
+  - 🎨 Utilizes Tailwind CSS for a responsive and aesthetically pleasing UI.
+  - 🎥 Incorporates animations using Framer Motion for an interactive user experience.
+  - ✅ Email validation feature to ensure valid email addresses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Backend:**
+  - 🔧 Developed with Express.js,🌐 Axios for HTTP requests 
 
-## Expanding the ESLint configuration
+### 🚀 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone and run `npm install` to install the necessary dependencies. Use `npm run dev` to start the development server.
 
-- Configure the top-level `parserOptions` property like this:
+### 📬 Usage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The application is intended for managing email subscriptions by allowing users to subscribe their email to a list of predefined addresses. It provides a simple UI for email input and displays status messages based on the subscription process.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 📝 License
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License). You can use, modify, and distribute the code as you see fit.
