@@ -8,11 +8,7 @@ import { ShinyButton } from "./assets/ShinyButton";
 import Input from '@mui/material/Input';
 import axios from "axios";
 
-
 const page = () => {
-
-
-
   const [visible, setVisible] = useState(false);
   const [animationPlayed, setAnimationPlayed] = useState(false);
 
@@ -43,14 +39,9 @@ const page = () => {
         setGoodEmail(undefined);
       }
     };
-
     return { goodEmail, validateEmail };
   };
-
   const { goodEmail, validateEmail } = useEmailValidation();
-
-
-
   const handleSwitch = () => {
     if (!animationPlayed) {
       setAnimationPlayed(true);
@@ -82,9 +73,9 @@ const page = () => {
     }
   };
 
-
   return (
     <div className="flex justify-center items-center h-screen w-screen bg-gray-600">
+      <div className="absolute top-0 right-0"><p>Sun/Moon</p></div>
       <div className={`rounded-md ${!animationPlayed ? "hover:scale-105 && hover:cursor-pointer && animate-pulse" : ""}
           ${showNewDiv ? " " : ""}`}>
 

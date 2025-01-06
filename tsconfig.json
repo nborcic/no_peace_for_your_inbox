@@ -36,8 +36,8 @@
     "jest",
     "src/setupTests.ts",
     "eslint.config.js",
-    "postcss.config.js",
-    "tailwind.config.js",
+    "postcss.config.ts",
+    "tailwind.config.ts",
     "vite.config.ts"
   ]
 }
